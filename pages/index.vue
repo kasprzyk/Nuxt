@@ -18,7 +18,7 @@ export default {
   },
   async asyncData({ $axios, error }) {
     try {
-      const { data } = await $axios.get('http://localhost:3000/events')
+      const { data } = await $axios.get('http://localhost:3004/events')
       return {
         events: data
       }
